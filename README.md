@@ -1,3 +1,6 @@
+## Como utilizar:
+
+
 Iniciamos docker
 
 Parados en el repositorio raíz, ejecutamos el siguiente comando: docker-compose up (Previamente tiene que estar hecho el build del contenedor)
