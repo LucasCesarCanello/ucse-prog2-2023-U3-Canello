@@ -1,12 +1,14 @@
-FROM node:14
+# app1/Dockerfile
+FROM node:16
 
-WORKDIR /app1
-COPY package*.json .
-COPY package-lock.json .
+WORKDIR /usr/src/app
+
+COPY package*.json ./
 
 RUN npm install
-COPY index.js .
+
+COPY . .
 
 EXPOSE 4000
 
-CMD [ "node", "index.js" ]
+CMD ["node", "index.js"]
